@@ -1,0 +1,6 @@
+com\ucc\demo\model\Contrato.class
+com\ucc\demo\controller\ContratoController.class
+com\ucc\demo\DTO\ContratoRequestDTO.class
+com\ucc\demo\exception\GlobalExceptionHandler.class
+com\ucc\demo\DemoApplication.class
+com\ucc\demo\service\ContratoService.class
