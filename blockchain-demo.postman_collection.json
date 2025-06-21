@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "8b501eb3-272b-4cef-92b9-bdd9e8cda702",
+		"name": "Blockchain Demo API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45752405"
+	},
+	"item": [
+		{
+			"name": "Crear contrato",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "comprador",
+							"value": "Juan",
+							"type": "text"
+						},
+						{
+							"key": "vendedor",
+							"value": "Pedro",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/contratos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contratos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirmar entrega",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/contratos/1/confirmar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contratos",
+						"1",
+						"confirmar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Iniciar disputa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/contratos/1/disputa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contratos",
+						"1",
+						"disputa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener contrato",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/contratos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contratos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simular pago",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
